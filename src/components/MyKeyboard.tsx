@@ -92,21 +92,21 @@ export default function MyKeyboard() {
       >
         <Text style={Styles.screenSecondNumber}>
           {secondNumber}
-          <Text style={{ color: "purple", fontSize: 50, fontWeight: '500' }}>{operation}</Text>
+          <Text style={{ color: "#46D5B2", fontSize: 40, fontWeight: '300' }}>{operation}</Text>
         </Text>
         {firstNumberDisplay()}
       </View>
       <View style={Styles.row}>
         <Button title="C" isGray onPress={clear} />
         <Button title="+/-" isGray onPress={() => handleOperationPress("+/-")} />
-        <Button title="％" isGray onPress={() => handleOperationPress("％")} />
+        <Button title="%" isGray onPress={() => handleOperationPress("%")} />
         <Button title="÷" isBlue onPress={() => handleOperationPress("/")} />
       </View>
       <View style={Styles.row}>
         <Button title="7" onPress={() => handleNumberPress("7")} />
         <Button title="8" onPress={() => handleNumberPress("8")} />
         <Button title="9" onPress={() => handleNumberPress("9")} />
-        <Button title="×" isBlue onPress={() => handleOperationPress("*")} />
+        <Button title="x" isBlue onPress={() => handleOperationPress("*")} />
       </View>
       <View style={Styles.row}>
         <Button title="4" onPress={() => handleNumberPress("4")} />
